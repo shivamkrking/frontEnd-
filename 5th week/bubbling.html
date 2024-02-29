@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    #main img{
+        height: 500px;
+        width: 500px;
+    }
+    #change img{
+        height: 100px;
+        width: 100px;
+    }
+    #change img:hover{
+            border: 6px solid aqua;
+            transform: scale(2);
+            border-radius: 50%;
+            
+        }
+
+</style>
+</head>
+<body>
+<div id="main">
+    <img src="https://images.unsplash.com/photo-1708958152510-79ac5cf83eec?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+</div>
+<div id="change">
+    <img src="https://images.unsplash.com/photo-1708831095084-c5b2e2d5e894?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+    <img src="https://images.unsplash.com/photo-1708972789080-2cb027800d3b?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+    <img src="https://images.unsplash.com/photo-1683730495161-35cb86b74451?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+    <img src="https://images.unsplash.com/photo-1706313445027-06ed3cd0dd3e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+    <img src="https://images.unsplash.com/photo-1696294491265-42507362f5b7?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+</div>
+<script>
+       
+    let main = document.getElementById('main');
+
+    let change = document.getElementById('change');
+    let img = change.getElementsByTagName('img');
+    for (let i = 0; i < img.length; i++) {
+        img[i].addEventListener('click', function(){
+            main.innerHTML = img[i].outerHTML;
+        });
+    }
+
+</script>
+    
+</body>
+</html>

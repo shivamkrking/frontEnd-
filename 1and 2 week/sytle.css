@@ -1,0 +1,39 @@
+h1{
+    font-style: inherit;
+    color: blueviolet;
+}
+#heading{
+    text-align: center;
+}
+.first{
+    color: red;
+}
+th{
+    background-color: azure;
+}
+#first{
+    background-color: aliceblue;
+    color: blueviolet;
+}
+#second{
+    background-color: antiquewhite;
+    color: brown;
+}
+#third{
+    background-color: aquamarine;
+    color: blue;
+}
+#four{
+    background-color: beige;
+    color: black;
+}
+img{
+    margin-left: 350px;
+}
+body{
+    background-image:url(https://img.freepik.com/free-photo/cardano-blockchain-platform_23-2150411956.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}

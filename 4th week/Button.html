@@ -1,0 +1,67 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Button</title>
+</head>
+<body>
+
+
+<div id="button-container"></div>
+<p id="p1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus consequuntur dolor ducimus, quasi quam laudantium cupiditate, tenetur inventore incidunt, eveniet blanditiis modi illum?</p>
+
+<script>
+ 
+  var button = document.createElement("button");
+
+ 
+  button.innerHTML = "Click me";
+
+
+  button.style.padding = "10px";
+  button.style.margin = "5px";
+
+
+  button.addEventListener("click", function() {
+    var a=document.getElementById("p1");
+    if(a.style.display==="none"){
+        x.style.display="block";
+    }
+    else{
+        x.style.display="none";
+    }
+  });
+
+
+  var buttonContainer = document.getElementById("button-container");
+  buttonContainer.appendChild(button);
+</script>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="1st"></p>
+    <p id="2st"></p>
+    <div></div>
+    <script>
+        let person1={
+            name:"john", age:30,city:"NewYork"
+        }
+        let person2={
+            name:"john", age:30,city:"NewYork"
+        }
+        document.getElementById("1st").innerHTML="Name "+ person1.name + "<br>Age: "+person1.age + "<br>City "+person1.city;
+        document.getElementById("2st").innerHTML="Name "+ person2.name + "<br>Age: "+person2.age + "<br>City "+person2.city;
+
+    </script>
+</body>
+</html>

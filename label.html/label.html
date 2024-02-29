@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="label.css">
+</head>
+<body>
+    <div>
+    <form>
+        <h1>Sign Up</h1>
+        <br>
+        <br>
+        <label for="Name">Name</label>
+        <input type="text" placeholder="First name & last name" id="name">
+        <br><br>
+        <label for="password">Password</label>
+        <input type="password">
+        <br><br>
+        <label for="address">Address</label>
+        <textarea name="address" id="" cols="30" rows="10"></textarea>
+        <br><br>
+        <label for="email">E-mail</label>
+        <input type="email" placeholder="Enter the email address">
+        <br><br>
+        <label for="Cities">Select City</label>
+        <select name="Cities" id="Cities">
+            <option value="Select">Select</option>
+            <option value="Kokata">Kolkata</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Delhi">Delhi</option>
+        </select>
+        <br><br>
+        <label for="Gender">Gender</label>
+        <input type="radio" value="Male" id="checked">Male
+        <input type="radio" value="Female" id="checked">Female
+        <input type="radio" value="Other" id="checked">Other
+        <br><br>
+        <label for="dob">DOB</label>
+        <input type="date" id="dob">
+        <br><br>
+        <label for="upload">upload File</label>
+        <input type="file">
+        <br><br>
+        <button>Sumit</button>
+        <br><br>
+    </form>
+    </div>
+    
+    <script>
+        var x =10;
+        var y = 20;
+        var add= x+y;
+        var sub= x-y;
+        var mult = x * y;
+        var div = x/y;
+        var rem = x%y;
+
+        console.log(add);
+        console.log(sub);
+        console.log(mult);
+        console.log(div);
+        console.log(rem);
+
+        var w = Number(prompt("Enter the first number: "));
+        var u = Number(prompt("Enter the second number: "));
+        var sum = w+u;
+        alert(sum);
+    </script>
+    
+</body>
+</html>

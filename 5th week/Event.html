@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #parent{
+            height: 500px;
+            width: 500px;
+            background-color: rgb(27, 171, 123);
+            margin: 100px 550px;
+          
+        }
+        #child{
+            height: 200px;
+            width: 200px;
+            background-color: salmon;
+            margin: 150px 150px;
+            
+        }
+    </style>
+    <body>
+        <div id="parent">
+            <div id="child">
+    
+            </div>
+        </div>
+        <script>
+            
+            let parent = document.getElementById('parent');
+            let child = document.getElementById('child');
+            parent.addEventListener('click', function(){
+                alert('Parent');
+            }, true );
+            child.addEventListener('click', function(){
+                alert('Child');
+            },true);
+    
+        </script>
+    </body>
+    </html>viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Event.css">
+</head>
+<body>
+    <div id="box"></div>
+
+    <script src="Event.js"></script>
+</body>
+</html>
